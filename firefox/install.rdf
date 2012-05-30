@@ -1,0 +1,33 @@
+<?zml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description
+    about="urn:mozilla:install-manifest"
+
+    em:name="Pinboard"
+    em:description="Pinboard Bookmarks"
+    em:creator="Ole Bergmann"
+
+    em:id="pinboard@ole.im"
+    em:version="0.1"
+    em:homepageURL="http://ole.im"
+
+    em:iconURL="chrome://pinboard/content/icon.png">
+    <em:targetApplication><!-- Firefox -->
+      <Description
+        em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+        em:minVersion="1.4"
+        em:maxVersion="99" />
+    </em:targetApplication>
+
+    <em:file>
+      <Description
+        about="urn:mozilla:extension:pinboard"
+        em:package="content/pinboard/" />
+    </em:file>
+
+  </Description>
+
+</RDF>

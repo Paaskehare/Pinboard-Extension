@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css"
+  href="chrome://pinboard/content/pinboard.css"?>
+
+<!DOCTYPE overlay >
+<overlay id="pinboard-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/javascript"
+  src="chrome://pinboard/content/pinboard.js"/>
+
+<!-- Firefox -->
+<toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="bookmark-button"/>
+  </toolbarpalette>
+
+<!-- Thunderbird mail -->
+<toolbarpalette id="MailToolbarPalette">
+  <toolbarbutton id="custom-button-1"/>
+  </toolbarpalette>
+
+<!-- Thunderbird compose -->
+<toolbarpalette id="MsgComposeToolbarPalette">
+  <toolbarbutton id="custom-button-1"/>
+  </toolbarpalette>
+
+<!-- Thunderbird address book -->
+<toolbarpalette id="AddressBookToolbarPalette">
+  <toolbarbutton id="custom-button-1"/>
+  </toolbarpalette>
+
+<!-- Sunbird -->
+<toolbarpalette id="calendarToolbarPalette">
+  <toolbarbutton id="custom-button-1"/>
+  </toolbarpalette>
+
+
+<!-- button details -->
+<toolbarbutton id="bookmark-button"
+  label="Pinboard"
+  tooltiptext="Bookmark this page"
+  oncommand="BookmarkButton()"
+  class="toolbarbutton-1 chromeclass-toolbar-additional custombutton"
+  />
+
+</overlay>

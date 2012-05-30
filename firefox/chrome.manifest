@@ -1,0 +1,5 @@
+content pinboard chrome/
+style chrome://global/content/customizeToolbar.xul chrome://pinboard/content/pinboard.css
+
+# Firefox
+overlay chrome://browser/content/browser.xul chrome://pinboard/content/pinboard.xul
